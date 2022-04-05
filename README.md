@@ -28,3 +28,4 @@ Tech Stacks
 
 - Language: Python 3.8
 - Framework: Django 4.0.3
+- AWS S3
