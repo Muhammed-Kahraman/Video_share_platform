@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-11 offset-ml-3">
+        <h3>Articles</h3>
+         <hr>
+        <div class="col-lg-8">
+            <form>
+                 {% csrf_token %}
+                <input type="text" name = "keyword" class="input-sm" maxlength="64" placeholder="Search...">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+
+            {% if articles %}
+        {% for article in articles %}
+    <div class="row">
+    <div class="col-ml-11 offset-ml-3">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Title -->
+               <a href="{% url 'article:detail' article.id %}">
+                   <h2 class="mt-4">{{ article.title }}</h2>
+               </a>
+
+
+            <!-- Author -->
+            <p class="lead">
+            by {{ article.author }}
+            </p>
+
+            <hr>
+
+            <!-- Date/Time -->
+            <p>{{ article.created_date }}</p>
+
+            <hr>
+
+            <!-- Preview Video -->
+            <video controls
+            style="max-width: 100%" height="auto" controlList="nodownload">
+                <source src="{{ article.video_file.url }}" type="video/mp4">
+            </video>
+
+        </div>
+    </div>
+        {% endfor %}
+
+    {% else %}
+
+        <div class="alert alert-danger">
+            Article has been not found.
+        </div>
+    </div>
+    {% endif %}
+        </div>
+    </div>
+
+
+{% endblock %}
