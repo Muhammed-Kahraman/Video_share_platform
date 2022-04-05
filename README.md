@@ -1,5 +1,19 @@
 # Video_share_platform
 
+1) Create a virtual environment
+2) Install django
+3) Create .env file same directory manage.py
+4) And inside the file set up django_secret_key, aws_secret_key, access_key and bucket_name.
+5) Install the packages written below.
+
+Necessary steps for run the project
+- pip install decouple
+- pip install django-storages
+- pip install whitenoise 
+- pip install Boto3
+
+And you are good to go.
+
 Blog list View
 
 List all blog posts with Title, Tag, Author Name, Date Posted, Video.
