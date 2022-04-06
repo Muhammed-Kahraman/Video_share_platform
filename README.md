@@ -8,8 +8,17 @@
 
 Necessary steps for run the project
 - pip install decouple
+
+- pip install django_cleanup
+
 - pip install django-storages
+
+- pip install whitenoise      
+
+- pip install django-crispy-forms
+
 - pip install whitenoise 
+
 - pip install Boto3
 
 And you are good to go.
