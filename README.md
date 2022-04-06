@@ -16,7 +16,7 @@ And you are good to go.
 
 Blog list View
 
-List all blog posts with Title, Tag, Author Name, Date Posted, Video.
+List all blog posts with Title, Author Name, Date Posted, Video.
 
 Search
 
