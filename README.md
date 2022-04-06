@@ -32,7 +32,7 @@ Users can Login/Register to the Blog App.
 
 Comment
 
-Users can comment to any blog post after login or comment anonymously without login.
+Users can comment to any blog post after login process.
 
 Create Blog Post
 
