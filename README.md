@@ -7,7 +7,7 @@
 5) Install the packages written below.
 
 Necessary steps for run the project
-- pip install decouple
+- pip install python-decouple
 
 - pip install django_cleanup
 
@@ -16,8 +16,6 @@ Necessary steps for run the project
 - pip install whitenoise      
 
 - pip install django-crispy-forms
-
-- pip install whitenoise 
 
 - pip install Boto3
 
