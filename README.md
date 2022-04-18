@@ -18,6 +18,8 @@ Necessary steps for run the project
 - pip install django-crispy-forms
 
 - pip install Boto3
+-  
+- python manage.py migrate
 
 And you are good to go.
 
