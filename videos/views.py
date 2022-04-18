@@ -69,7 +69,7 @@ def updateArticle(request, id):
 def deleteArticle(request, id):
     article = get_object_or_404(Video, id=id)
     article.delete()
-    messages.info("Article successfully deleted.")
+    messages.info(request, "Article successfully deleted.")
     return redirect("article:dashboard")
 
 
